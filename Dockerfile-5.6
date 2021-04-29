@@ -4,3 +4,4 @@ COPY --from=mlocati/php-extension-installer /usr/bin/install-php-extensions /usr
 RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
 
 RUN   install-php-extensions redis  rdkafka mongodb  PDO  pdo_mysql gd curl swoole xdebug
+
